@@ -12,8 +12,8 @@
 hs_err_pid*
 
 #BlueJ specifics
-**/doc
-*.pkh
-*.ctxt
-*.bluej
+#**/doc
+#*.pkh
+#*.ctxt
+#*.bluej
 .DS_Store

@@ -15,6 +15,8 @@ public class Picture
     private Square window;
     private Triangle roof;
     private Circle sun;
+    private Person body;
+    
 
     /**
      * Constructor for objects of class Picture
@@ -29,31 +31,89 @@ public class Picture
      */
     public void draw()
     {
-        wall = new Square();
-        wall.moveHorizontal(-140);
-        wall.moveVertical(20);
-        wall.changeSize(120);
-        wall.makeVisible();
+
         
-        window = new Square();
-        window.changeColor("black");
-        window.moveHorizontal(-120);
-        window.moveVertical(40);
-        window.changeSize(40);
-        window.makeVisible();
-
-        roof = new Triangle();  
-        roof.changeSize(60, 180);
-        roof.moveHorizontal(20);
-        roof.moveVertical(-60);
-        roof.makeVisible();
-
+        sun = new Circle();
+        sun.changeColor("black");
+        sun.moveHorizontal(-120);
+        sun.moveVertical(-30);
+        sun.changeSize(300);
+        sun.makeVisible();
+        
+        sun = new Circle();
+        sun.changeColor("blue");
+        sun.moveHorizontal(-115);
+        sun.moveVertical(-25);
+        sun.changeSize(290);
+        sun.makeVisible();
+        
+        sun = new Circle();
+        sun.changeColor("red");
+        sun.moveHorizontal(-110);
+        sun.moveVertical(-20);
+        sun.changeSize(280);
+        sun.makeVisible();
+        
         sun = new Circle();
         sun.changeColor("yellow");
-        sun.moveHorizontal(100);
-        sun.moveVertical(-40);
-        sun.changeSize(80);
+        sun.moveHorizontal(-105);
+        sun.moveVertical(-15);
+        sun.changeSize(270);
         sun.makeVisible();
+        
+        sun = new Circle();
+        sun.changeColor("magenta");
+        sun.moveHorizontal(-100);
+        sun.moveVertical(-10);
+        sun.changeSize(260);
+        sun.makeVisible();
+        
+        sun = new Circle();
+        sun.changeColor("green");
+        sun.moveHorizontal(-95);
+        sun.moveVertical(-5);
+        sun.changeSize(250);
+        sun.makeVisible();
+        
+        sun = new Circle();
+        sun.changeColor("black");
+        sun.moveHorizontal(-90);
+        sun.moveVertical(0);
+        sun.changeSize(240);
+        sun.makeVisible();
+        
+        sun = new Circle();
+        sun.changeColor("magenta");
+        sun.moveHorizontal(-85);
+        sun.moveVertical(5);
+        sun.changeSize(230);
+        sun.makeVisible();
+        
+        sun = new Circle();
+        sun.changeColor("black");
+        sun.moveHorizontal(-80);
+        sun.moveVertical(10);
+        sun.changeSize(220);
+        sun.makeVisible();
+        
+        sun = new Circle();
+        sun.changeColor("magenta");
+        sun.moveHorizontal(-75);
+        sun.moveVertical(15);
+        sun.changeSize(210);
+        sun.makeVisible();
+        
+        body = new Person();
+        body.changeColor("yellow");
+        body.moveHorizontal(-20);
+        body.moveVertical(0);
+        body.changeSize(-100, -100);
+        body.makeVisible();
+    
+
+        
+        
+        
     }
 
     /**
